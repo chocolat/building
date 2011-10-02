@@ -1,1 +1,1 @@
-ghc -c "$CHOC_FILE" -o "$CHOC_TEMPFILE_1" -ohi "$CHOC_TEMPFILE_2"
+cat "$CHOC_TEMPFILE_1" && ghc -c "$CHOC_TEMPFILE_1" -o "$CHOC_TEMPFILE_2" -ohi "$CHOC_TEMPFILE_3"
