@@ -1,0 +1,1 @@
+ghci "$CHOC_FILE"

@@ -1,0 +1,1 @@
+runhaskell "$CHOC_FILE"
