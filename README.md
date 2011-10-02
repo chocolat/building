@@ -1,6 +1,6 @@
 # Chocolat Building Glue
 
-This nothing else than an attempt to create a unified interface to all programming language implementations on earth! Nah, I'm kidding, the goal of this repo is to collect shell scripts that take a source file as input, and pass it through a compiler/interpreter/linter/etc.
+This nothing less than an attempt to create a unified interface to all programming language implementations on earth! Nah, I'm kidding, the goal of this repo is to collect shell scripts that take a source file as input, and pass it through a compiler/interpreter/linter/etc.
 
 ## Script Types
 
