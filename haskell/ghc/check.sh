@@ -1,0 +1,1 @@
+ghc -c "$CHOC_FILE" -o "$CHOC_TEMPFILE_1" -ohi "$CHOC_TEMPFILE_2"
