@@ -28,8 +28,15 @@ A few other environment variables are provided to scripts:
     $CHOC_FILENAME       # The name of the file
     $CHOC_EXT            # The file's extension
     $CHOC_FILENAME_NOEXT # The name of the file with the extension removed
+    
     $CHOC_FILE_DIR       # The directory that contains the file
     $CHOC_PROJECT_DIR    # THe directory of the base project (may not be the same as $CHOC_FILE_DIR)
+    
+    $CHOC_TEMPFILE_1     # A path to a temporary file in which you can (please don't use mktemp since it uses the wrong location). The file will be deleted after the script exits.
+    $CHOC_TEMPFILE_2
+    $CHOC_TEMPFILE_3
+    $CHOC_TEMPFILE_4
+    $CHOC_TEMPFILE_5
 
 ## `common.sh`
 
