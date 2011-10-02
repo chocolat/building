@@ -1,2 +1,2 @@
-ruby -c $CHOC_FILE
+ruby -c
 
