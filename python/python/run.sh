@@ -1,2 +1,3 @@
-python $CHOC_FILE
+#!/usr/bin/env bash
 
+python "$CHOC_FILE"

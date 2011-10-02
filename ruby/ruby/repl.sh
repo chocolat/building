@@ -1,1 +1,3 @@
-irb $CHOC_FILE
+#!/usr/bin/env bash
+
+irb "$CHOC_FILE"

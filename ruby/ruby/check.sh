@@ -1,2 +1,3 @@
-ruby -c
+#!/usr/bin/env bash
 
+ruby -c

@@ -1,1 +1,3 @@
-ruby $CHOC_FILE
+#!/usr/bin/env bash
+
+ruby "$CHOC_FILE"
