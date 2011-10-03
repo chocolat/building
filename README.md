@@ -6,10 +6,11 @@ This nothing less than an attempt to create a unified interface to all programmi
 
 The project is organized as `<language>/<tool>/<script>.sh`, and there are a limited number of allowed script names:
 
-* **run.sh** this script should run the file found in the environment variable `$CHOC_FILE`.
-* **repl.sh** this script should load the file found in the environment variable `$CHOC_FILE` into a repl.
-* **check.sh** this should should perform syntactic (and optionally semantic) checking on the *standard input* passed to it (it's important that it uses *standard input* and not `$CHOC_FILE` since we want to be able to check as the user is typing).
-* **build.sh** this should build the file found in the environment variable `$CHOC_FILE` and put its result into `$CHOC_BUILD_DIR`.
+* **run.sh** should run the file found in the environment variable `$CHOC_FILE`.
+* **repl.sh** should load the file found in the environment variable `$CHOC_FILE` into a repl.
+* **check.sh** should should perform syntactic (and optionally semantic) checking on the *standard input* passed to it (it's important that it uses *standard input* and not `$CHOC_FILE` since we want to be able to check as the user is typing).
+* **build.sh** should build the file found in the environment variable `$CHOC_FILE` and put its result into `$CHOC_BUILD_DIR`.
+* **debug.sh** should run the file found in the environment variable `$CHOC_FILE` under an interactive debugger.
 
 If you have ideas for more scripts, please let us know.
 
