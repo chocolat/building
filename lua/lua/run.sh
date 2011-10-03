@@ -1,1 +1,1 @@
-lua - $CHOC_FILE
+lua - "$CHOC_FILE"

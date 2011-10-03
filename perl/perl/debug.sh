@@ -1,1 +1,1 @@
-perl -d $CHOC_FILE
+perl -d "$CHOC_FILE"

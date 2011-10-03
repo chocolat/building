@@ -1,2 +1,2 @@
-lua -i $CHOC_FILE
+lua -i "$CHOC_FILE"
 

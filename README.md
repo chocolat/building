@@ -2,9 +2,13 @@
 
 This nothing less than an attempt to create a unified interface to all programming language implementations on earth! Nah, I'm kidding, the goal of this repo is to collect shell scripts that take a source file as input, and pass it through a compiler/interpreter/linter/etc.
 
+We're on `##chocolatapp` on [irc.freenode.net](http://webchat.freenode.net/?channels=%23%23chocolatapp) if you want to help out.
+
 ## Script Types
 
-The project is organized as `<language>/<tool>/<script>.sh`, and there are a limited number of allowed script names:
+The project is organized as `<language>/<implementation>/<script>.sh`. We take a wide view on what an "implementation" is: if two tools are likely to be installed together and don't have conflicting scripts, we consider that the same "implementation". For instance: `ruby` and `irb` are part of the implementation "ruby", but `clang` and `gcc` come under their own implementations.
+
+There are a limited number of allowed script names:
 
 * **run.sh** should run the file found in the environment variable `$CHOC_FILE`.
 * **repl.sh** should load the file found in the environment variable `$CHOC_FILE` into a repl.
