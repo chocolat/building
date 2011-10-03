@@ -25,7 +25,7 @@ If you have ideas for more scripts, please let us know.
 The optional `.chocbuild` file lives in the project's directory and/or user's home directory. It provides options to scripts, such as:
 
     $CHOC_BUILD_DIR  # Where to put build products. Defaults to build/
-    $JAVASCRIPT_NODE_RUN_ARGUMENTS   # Arguments that javascript/node/run.sh should pass along to node
+    $JAVASCRIPT_RUN_COMMAND   # An alternative command to use instead of the one in javascript/<imp>/run.sh
 
 ## Environment Variables
 
@@ -44,9 +44,3 @@ A few other environment variables are provided to scripts:
     $CHOC_TEMPFILE_1     # A path to a temporary file in which you can (please don't use mktemp since it uses the wrong location). The file will be deleted after the script exits.
     $CHOC_TEMPFILE_2
     $CHOC_TEMPFILE_3
-    $CHOC_TEMPFILE_4
-    $CHOC_TEMPFILE_5
-
-## common.sh
-
-The `common.sh` script is prefixed to all scripts.
