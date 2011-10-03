@@ -4,6 +4,8 @@ This nothing less than an attempt to create a unified interface to all programmi
 
 We're on `##chocolatapp` on [irc.freenode.net](http://webchat.freenode.net/?channels=%23%23chocolatapp) if you want to help out.
 
+The file TODO.txt contains the status of all languages we could think of (though it isn't exhaustive).
+
 ## Script Types
 
 The project is organized as `<language>/<implementation>/<script>.sh`. We take a wide view on what an "implementation" is: if two tools are likely to be installed together and don't have conflicting scripts, we consider that the same "implementation". For instance: `ruby` and `irb` are part of the implementation "ruby", but `clang` and `gcc` come under their own implementations.
