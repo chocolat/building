@@ -1,6 +1,6 @@
 # Chocolat Building Glue
 
-This nothing less than an attempt to create a unified interface to all programming language implementations on earth! Nah, I'm kidding, the goal of this repo is to collect shell scripts that take a source file as input, and pass it through a compiler/interpreter/linter/etc.
+The goal of this repo is to collect shell scripts that take a source file as input, and pass it through a compiler/interpreter/linter/etc.
 
 We're on `##chocolatapp` on [irc.freenode.net](http://webchat.freenode.net/?channels=%23%23chocolatapp) if you want to help out.
 
@@ -24,7 +24,7 @@ If you have ideas for more scripts, please let us know.
 
 The optional `.chocbuild` file lives in the project's directory and/or user's home directory. It provides options to scripts, such as:
 
-    $CHOC_BUILD_DIR  # Where to put build products. Defaults to build/
+    $CHOC_BUILD_DIR  # Where to put build products. Defaults to "build"
     $JAVASCRIPT_RUN_COMMAND   # An alternative command to use instead of the one in javascript/<imp>/run.sh
 
 ## Environment Variables
