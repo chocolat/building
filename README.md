@@ -8,13 +8,13 @@ The file TODO.txt contains the status of all languages we could think of (though
 
 ## Script Types
 
-The project is organized as `<language>/<implementation>/<script>.sh`. We take a wide view on what an "implementation" is: if two tools are likely to be installed together and don't have conflicting scripts, we consider that the same "implementation". For instance: `ruby` and `irb` are part of the implementation "ruby", but `clang` and `gcc` come under their own implementations.
+The project is organized as `<language>/<implementation>/<script>.sh`. We take a wide view on what an "implementation" is: if two tools are likely to be installed together and don't have conflicting scripts, we consider that the same "implementation". For instance: `ruby` and `irb` are part of the implementation "ruby", but `clang` and `gcc` come under their own implementations. In cases where multiple implementations are provided for, the most common should be tagged `[default]`.
 
 There are a limited number of allowed script names:
 
 * **run.sh** should run the file found in the environment variable `$CHOC_FILE`.
 * **repl.sh** should load the file found in the environment variable `$CHOC_FILE` into a repl.
-* **check.sh** should should perform syntactic (and optionally semantic) checking on the *standard input* passed to it (it's important that it uses *standard input* and not `$CHOC_FILE` since we want to be able to check as the user is typing).
+* **check.sh** should should perform syntactic (and optionally semantic) checking on the *standard input* passed to it (it's important that it uses *standard input* if possible and not `$CHOC_FILE` since we want to be able to check as the user is typing).
 * **build.sh** should build the file found in the environment variable `$CHOC_FILE` and put its result into `$CHOC_BUILD_DIR`.
 * **debug.sh** should run the file found in the environment variable `$CHOC_FILE` under an interactive debugger.
 
