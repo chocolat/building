@@ -22,15 +22,19 @@ If you have ideas for more scripts, please let us know.
 
 ## The .chocbuild file
 
-The optional `.chocbuild` file lives in the project's directory and/or user's home directory. It provides options to scripts, such as:
+The optional `.chocbuild` directory lives in the project's directory and/or user's home directory. It provides alternative scripts to use when building. For instance, you can pick a different script for javascript with
 
-    $CHOC_BUILD_DIR  # Where to put build products. Defaults to "build"
-    $JAVASCRIPT_RUN_COMMAND   # An alternative command to use instead of the one in javascript/<imp>/run.sh
+    $ cat ~/.chocbuild/javascript/run.sh
+    rhino "$CHOC_FILE"
+
+Note the lack of an implementation directory. It's just `.chocbuild/<language>/<action>.sh`.
 
 ## Environment Variables
 
-A few other environment variables are provided to scripts:
+A few environment variables are provided to scripts:
 
+    $CHOC_BUILD_DIR  # Where to put build products. Defaults to "build"
+    
     $CHOC_FILE           # The path to the file
     $CHOC_FILENAME       # The name of the file
     $CHOC_EXT            # The file's extension
