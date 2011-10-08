@@ -10,7 +10,6 @@
                           Awk   unknown
                         Basic   unknown
                         Batch   unknown
-                         BETA   unknown
                           Boo   unknown
                     Brainfuck   unknown
                             C    incomplete: gcc/check.sh only
