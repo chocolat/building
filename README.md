@@ -1,6 +1,6 @@
 # Chocolat Building Glue
 
-This nothing less than an attempt to create a unified interface to all programming language implementations on earth! Nah, I'm kidding, the goal of this repo is to collect shell scripts that take a source file as input, and pass it through a compiler/interpreter/linter/etc.
+The goal of this repo is to collect shell scripts that take a source file as input, and pass it through a compiler/interpreter/linter/etc.
 
 We're on `##chocolatapp` on [irc.freenode.net](http://webchat.freenode.net/?channels=%23%23chocolatapp) if you want to help out.
 
@@ -22,15 +22,19 @@ If you have ideas for more scripts, please let us know.
 
 ## The .chocbuild file
 
-The optional `.chocbuild` file lives in the project's directory and/or user's home directory. It provides options to scripts, such as:
+The optional `.chocbuild` directory lives in the project's directory and/or user's home directory. It provides alternative scripts to use when building. For instance, you can pick a different script for javascript with
 
-    $CHOC_BUILD_DIR  # Where to put build products. Defaults to build/
-    $JAVASCRIPT_NODE_RUN_ARGUMENTS   # Arguments that javascript/node/run.sh should pass along to node
+    $ cat ~/.chocbuild/javascript/run.sh
+    rhino "$CHOC_FILE"
+
+Note the lack of an implementation directory. It's just `.chocbuild/<language>/<action>.sh`.
 
 ## Environment Variables
 
-A few other environment variables are provided to scripts:
+A few environment variables are provided to scripts:
 
+    $CHOC_BUILD_DIR  # Where to put build products. Defaults to "build"
+    
     $CHOC_FILE           # The path to the file
     $CHOC_FILENAME       # The name of the file
     $CHOC_EXT            # The file's extension
@@ -44,9 +48,3 @@ A few other environment variables are provided to scripts:
     $CHOC_TEMPFILE_1     # A path to a temporary file in which you can (please don't use mktemp since it uses the wrong location). The file will be deleted after the script exits.
     $CHOC_TEMPFILE_2
     $CHOC_TEMPFILE_3
-    $CHOC_TEMPFILE_4
-    $CHOC_TEMPFILE_5
-
-## common.sh
-
-The `common.sh` script is prefixed to all scripts.
