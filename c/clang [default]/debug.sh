@@ -1,1 +1,1 @@
-build.sh && lldb "$CHOC_BUILD_DESTINATION"
+bash build.sh && lldb "$CHOC_BUILD_DESTINATION"

@@ -1,2 +1,2 @@
-build.sh && exec "$CHOC_BUILD_DESTINATION"
+bash build.sh && exec "$CHOC_BUILD_DESTINATION"
 
