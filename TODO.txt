@@ -35,7 +35,7 @@
                          HAML   unknown
                       Haskell    ghc mostly complete. Missing debug.sh
                          HTML   unknown
-                           Io   unknown
+                           Io    mostly complete. repl.sh and run.sh only
                          Java   unknown
                    JavaScript    node/ complete
                          JSON   unknown
