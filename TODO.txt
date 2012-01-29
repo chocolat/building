@@ -1,7 +1,7 @@
                      LANGUAGE   STATUS
 ---------------------------------------
                  ActionScript   unknown
-                          Ada   unknown
+                          Ada    incomplete: gnat/run.sh + build.sh only
                           APL   unknown
                   AppleScript   unknown
                           Arc   unknown
